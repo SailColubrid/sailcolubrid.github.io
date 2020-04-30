@@ -41,6 +41,11 @@ eml.removeAttribute('class');
 </script>
 [bio]-->
 
+## Teaching Assitance
+* 2019 Spring 18-661 Introduction to Machine Learning for Engineers
+* 2020 Fall 18-739 Fairness and Security in Deep Learning
+
+
 ## Publications
 
 ```blog-bib
@@ -54,32 +59,34 @@ To support more information links (e.g., allow "slides" or "pdf" links),
 see "builder/marked.0.3.6/bibtex-service.js" line 85.
 }
 
-@InProceedings{PKC:DLOSS18,
-  author =       "Ivan Damg{\r a}rd and
-                  Ji Luo and
-                  Sabine Oechsner and
-                  Peter Scholl and
-                  Mark Simkin",
-  title =        "Compact Zero-Knowledge Proofs of Small {H}amming Weight",
-  pages =        "530--560",
-  editor =       pkc18ed,
-  booktitle =    pkc18name2,
-  volume =       pkc18vol2,
-  address =      pkc18addr,
-  month =        pkc18month,
-  publisher =    pkcpub,
-  series =       mylncs,
-  year =         2018,
-  doi =          "10.1007/978-3-319-76581-5_18",
-
-  biosite_url={https://link.springer.com/chapter/10.1007/978-3-319-76581-5_18},
-  biosite_venue={PKC 2018},
-  biosite_eprint={2017/1041},
+[CVPR2020 Workshop]
+@misc{wang2020interpreting,
+    title={Interpreting Interpretations: Organizing Attribution Methods by Criteria},
+    author={Zifan Wang and Piotr Mardziel and Anupam Datta and Matt Fredrikson},
+    year={2020},
+    eprint={2002.07985},
+    archivePrefix={arXiv},
+    primaryClass={cs.AI}
 }
+
+Motivated by distinct, though related, criteria, a growing number of attribution methods have been developed tointerprete deep learning. While each relies on the interpretability of the concept of "importance" and our ability to visualize patterns, explanations produced by the methods often differ. As a result, input attribution for vision models fail to provide any level of human understanding of model behaviour. In this work we expand the foundationsof human-understandable concepts with which attributionscan be interpreted beyond "importance" and its visualization; we incorporate the logical concepts of necessity andsufficiency, and the concept of proportionality. We definemetrics to represent these concepts as quantitative aspectsof an attribution. This allows us to compare attributionsproduced by different methods and interpret them in novelways: to what extent does this attribution (or this method)represent the necessity or sufficiency of the highlighted inputs, and to what extent is it proportional? We evaluate our measures on a collection of methods explaining convolutional neural networks (CNN) for image classification. We conclude that some attribution methods are more appropriate for interpretation in terms of necessity while others are in terms of sufficiency, while no method is always the most appropriate in terms of both.
+
+
+[CVPR2020 Workshop]
+@misc{wang2019scorecam,
+    title={Score-CAM: Score-Weighted Visual Explanations for Convolutional Neural Networks},
+    author={Haofan Wang and Zifan Wang and Mengnan Du and Fan Yang and Zijian Zhang and Sirui Ding and Piotr Mardziel and Xia Hu},
+    year={2019},
+    eprint={1910.01279},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+
+Recently, increasing attention has been drawn to the internal mechanisms of convolutional neural networks, and the reason why the network makes specific decisions. In this paper, we develop a novel post-hoc visual explanation method called Score-CAM based on class activation mapping. Unlike previous class activation mapping based approaches, Score-CAM gets rid of the dependence on gradients by obtaining the weight of each activation map through its forward passing score on target class, the final result is obtained by a linear combination of weights and activation maps. We demonstrate that Score-CAM achieves better visual performance and fairness for interpreting the decision making process. Our approach outperforms previous methods on both recognition and localization tasks, it also passes the sanity check. We also indicate its application as debugging tools. Official code has been released.
 
 ```
 
-## Pre-prints
+<!-- ## Pre-prints
 
 ```blog-bib
 
@@ -110,7 +117,9 @@ Beyond $\mathsf{NC}^1$ and towards $\mathsf{NL}$},
   biosite_arxiv = {1902.05020},
 }
 
-```
+``` -->
+
+
 
 ## Acknowledgement
 
